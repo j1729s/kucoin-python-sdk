@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 class ConnectWebsocket:
-    MAX_RECONNECTS = 5
+    MAX_RECONNECTS = 500000000
     MAX_RECONNECT_SECONDS = 60
 
     def __init__(self, loop, client, callback, private=False,sock=None):
